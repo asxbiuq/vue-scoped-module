@@ -1,15 +1,9 @@
 <template>
-  <div :class="$style.wrapper">
-    <p>parent</p>
-    <Child />
-  </div>
+  <ModuleParent />
+  <ScopedParent />
 </template>
 
 <script setup>
-  import Child from './components/Child.vue'
+  import ModuleParent from './components/ModuleParent.vue'
+  import ScopedParent from './components/ScopedParent.vue'
 </script>
-<style module>
-  .wrapper {
-    outline: 2px solid blue;
-  }
-</style>
